@@ -1,0 +1,114 @@
+:root {
+    --textgrey: rgb(23,23,23);
+    --offyellow: rgb(254, 254, 230);
+    --bordergrey: rgb(238, 238, 238);
+}
+
+body {
+    background:radial-gradient(white, rgb(254, 254, 230));
+    margin:0;
+}
+
+header {
+    height:50px;
+    border-bottom:1px solid var(--bordergrey);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:-10px;
+    padding:10px;
+    width:100%;
+}
+
+#logo-head {
+    height:100px;
+}
+
+header a {
+    color:var(--textgrey);
+    margin-right:20px;
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.splash-container {
+    display:grid;
+    width:100%;
+    grid-template-columns: repeat(11, 1fr);
+    margin-top:25px;
+}
+
+.splash {
+    height:650px;
+    display:flex;
+    align-items: center;
+    border-top-left-radius: 15em;
+    border-top-right-radius: 15em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.19)), url("assets/mountain-range.jpg");
+    background-size: cover;
+    background-position: top;
+    padding-top:50px;
+    flex-direction: column;
+    grid-column: 2 / 11;
+}
+
+.splash h1 {
+    font-size:3em;
+    text-align: center;
+    color:var(--textgrey)
+}
+.splash h1 em {
+    font-size: 1.5em;
+    color: var(--bordergrey);
+}
+
+.splash h3 {
+    color:var(--bordergrey);
+    width:90%;
+    margin-left:5%;
+    padding:0;
+    text-align: center;
+}
+
+.splash button {
+    padding:20px;
+    background-color: rgb(20, 94, 20);
+    color:var(--bordergrey);
+    border-radius: 3em;
+    border:1px solid;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 800;
+    margin-top:80px;
+}
+
+.wistmans-container {
+    display:grid;
+    grid-template-columns: repeat(11, 1fr);
+    width:100%;
+}
+.wistmans {
+    grid-column: 2 / 11;
+    display:grid;
+    grid-template-columns: repeat(9, 1fr);
+}
+
+.wistmans h2 {
+    grid-column: 1 / 6;
+    padding-top:1em;
+}
+
+.wistmans p {
+    grid-column: 1 / 5;
+}
+
+.wistmans img {
+    grid-column: 6 / 10;
+    width:100%;
+    height:100%;
+    grid-row: 1 / 3;
+}
