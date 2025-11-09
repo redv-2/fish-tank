@@ -5,6 +5,7 @@
     --offyellow: rgb(254, 254, 230);
     --border-accent: rgb(231, 235, 195);
     --bgblue: rgb(20, 64, 94);
+    --saturated-bg-blue: rgb(18, 14, 133);
     --light-accent-yellow-hsl: hsla(48.89,58.27%,72.75%,1);
     --off-white: rgb(236, 235, 226);
 }
@@ -57,7 +58,7 @@ main {
     display:grid;
     width:100%;
     grid-template-columns: repeat(11, 1fr);
-    margin-top:25px;
+    padding-top:25px;
 }
 
 .splash-container {
@@ -121,8 +122,13 @@ main {
     border:none;
 }
 
+.featured-container {
+    background-color:var(--saturated-bg-blue);
+}
+
 .featured {
     grid-column: 2 / 11;
+    color:var(--off-white);
 }
 
 .featured h2 {
